@@ -23,7 +23,6 @@ def updater(a):
         log.debug("new values: " + str(values))
         context[slave_id].setValues(register, address, values)
         log.debug("here 2")
-        time.sleep(3)
 
 store = ModbusSlaveContext(di = ModbusSequentialDataBlock(0, [17]*100),
                         co = ModbusSequentialDataBlock(0, [17]*100),
